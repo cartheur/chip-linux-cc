@@ -17,7 +17,7 @@ ENV WORKSPACE /home/workspace
 
 ENV KERNEL_BRANCH=4.4.11-ntc-1
 # kernel repo
-RUN cd /home/workspace && git clone --single-branch --branch debian/${KERNEL_BRANCH} https://github.com/NextThingCo/CHIP-linux.git
+RUN cd /home/workspace && git clone --single-branch --branch debian/${KERNEL_BRANCH} http://chip.jfpossibilities.com/gits/CHIP-linux.git
 
 ADD run.sh /home/workspace/
 
