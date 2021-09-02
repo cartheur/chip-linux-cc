@@ -17,10 +17,10 @@ ENV WORKSPACE /home/workspace
 
 ENV KERNEL_BRANCH=4.3.0-ntc-4
 # kernel repo
-RUN cd /home/workspace && git clone --single-branch --branch debian/${KERNEL_BRANCH} https://github.com/NextThingCo/CHIP-linux.git
+RUN cd /home/workspace && git clone --single-branch --branch debian/${KERNEL_BRANCH} http://chip.jfpossibilities.com/gits/CHIP-linux.git
 
 # WiFi kernel module repo
-RUN cd /home/workspace && git clone --single-branch --branch debian https://github.com/NextThingCo/RTL8723BS.git
+RUN cd /home/workspace && git clone --single-branch --branch debian http://chip.jfpossibilities.com/gits/RTL8723BS.git
 
 ADD run.sh /home/workspace/
 
